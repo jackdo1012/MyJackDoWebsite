@@ -1,0 +1,298 @@
+* {
+    margin: auto;
+    padding: auto;
+    border: auto;
+    font-size: 1.05em;
+    font-family: sans-serif;
+}
+
+body {
+    background-size: contain;
+    background: radial-gradient(circle, rgb(141, 58, 6) 30%, rgb(238, 98, 11) 90%);
+}
+
+.header {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: fit-content;
+    cursor: default;
+    background: linear-gradient(45deg, rgba(0, 0, 150, 1), rgba(0, 0, 255, 0.5));
+    text-align: center;
+    font-size: 400;
+    font-family: "Roboto Mono", monospace;
+}
+
+@supports (position: sticky) {
+    .header {
+        /* For different browser from here */
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        /* To here */
+        position: sticky;
+    }
+}
+
+.main {
+    font-family: 'Pangolin', cursive;
+    height: fit-content;
+    width: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 0, 1) 30%, rgba(50, 205, 50, 1)50%, rgb(0, 255, 0, 1) 30%);
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+    width: 100%;
+}
+
+.rating, .feedback {
+    text-align: center;
+    height: fit-content;
+}
+
+.input {
+    text-align: center;
+    width: 100%;
+}
+
+.input2 {
+    text-align: center;
+    width: 100%;
+}
+
+.my-inf {
+    text-align: justify;
+    line-height: 1.6;
+    grid-area: 1 / 1 / span 2 / 2; /* row-start / column-start / row-end / column-end */
+}
+
+.footer {
+    background-color: rgba(0, 200, 0, 1);
+    color: #ffffff;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 100%;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+}
+
+span[class|=jeans] {
+    font-weight: bold;
+    font-size: large;
+    color: rgba(255, 0, 0, 1);
+}
+
+span[class|=shirts] {
+    font-weight: bold;
+    font-size: large;
+    color: rgba(255, 0, 0, 1);
+}
+
+.jeans-inf:link, .shirts-inf:link {
+    font-size: small;
+    cursor: pointer;
+    color: rgba(255, 0, 0, 1);
+    font-style: italic;
+}
+
+.jeans-inf:visited, .shirts-inf:visited{
+    color: rgba(255, 0, 0, 1);
+}
+
+.nav {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    background-color: rgb(0, 128, 0);
+}
+
+.nav a {
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 0 0px; /* grow shrink basis */
+    transition: all 0.3s ease-in-out 10ms; /* property-name duration timing-function delay */
+    /* For different browser from here */
+    -webkit-transition: all 0.3s ease-in-out 10ms;
+    -moz-transition: all 0.3s ease-in-out 10ms;
+    -o-transition: all 0.3s ease-in-out 10ms;
+    -ms-transition: all 0.3s ease-in-out 10ms;
+    /* To here */
+}
+
+.nav a:hover {
+    background-color: rgba(0, 255, 0, 1);
+    padding: 3px;
+    font-size: 125%;
+}
+
+.nav a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.active-nav {
+    background-color: rgba(0, 255, 0, 1);
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(126, 126, 1);
+    border-radius: 50%;
+}
+
+.shop-title {
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgba(255, 0, 0, 1);
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+.buy-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+    height: fit-content;
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    background-color: rgb(0, 151, 13);
+    border: 5px solid #000000;
+    font-size: 20px;
+    font-weight: bold;
+    transition: padding 0.3s ease-in-out 0s;
+}
+
+.buy-button:hover {
+    cursor: pointer;
+    padding: 3px;
+    background-color: rgb(0, 104, 9);
+}
+
+.jeans-table, .shirts-table {
+    font-size: 20px;
+    border: 3px solid rgba(0, 0, 255, 1);
+    text-align: center;
+}
+
+.jeans-table, .shirts-table {
+    margin-left: 10px;
+}
+
+td:nth-child(2) {
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 255, 1);
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+}
+
+.jeans-shop h2, .shirts-shop h2 {
+    color: rgba(255, 0, 0, 1);
+    font-size: 30px;
+}
+
+.contact a:link {
+    color: #000000;
+}
+
+.contact a:visited {
+    color: #000000;
+}
+
+#submit, #submit2 {
+    margin: 10px 0; /* top-bottom left-right */ 
+    padding: 5px; /* all */
+    border: 3px solid rgba(0, 96, 92, 0.3);
+    font-weight: 700;
+    border-radius: 7px;
+    text-decoration: none;
+    width: fit-content;
+    color: #ffffff;
+    font-family: 'Carveat', cursive;
+    transition: all 0.25s linear 90ms; /* property-name duration timing-function delay */
+    animation: for-submit-button 4s linear 0s infinite normal; /* name duration timing-function delay iteration-count direction */
+    transform: matrix(1, 0.3, 0, 1, 0, 0); /* scaleX, skewY, skewX, scale Y, translate X, translate Y */
+    /* For different browser from here */
+    -webkit-transition: all 0.25s linear 90ms;
+    -moz-transition: all 0.25s linear 90ms;
+    -ms-transition: all 0.25s linear 90ms;
+    -o-transition: all 0.25s linear 90ms;
+    -webkit-transform: matrix(1, 0.3, 0, 1, 0, 0);
+    -moz-transform: matrix(1, 0.3, 0, 1, 0, 0);
+    -ms-transform: matrix(1, 0.3, 0, 1, 0, 0);
+    -o-transform: matrix(1, 0.3, 0, 1, 0, 0);
+    -webkit-animation: for-submit-button 4s linear 0s infin normal;
+    -moz-animation: fpr-submit-button 4s linear 0s infinite normal;
+    -ms-animation: for-submit-button 4s linear 0s infinite normal;
+    -o-animation: for-submit-button 4s linear 0s infinite normal;
+    /* To here */
+}
+
+#submit:hover {
+    cursor: pointer;
+    padding: 7px;
+}
+
+#submit2:hover {
+    cursor: pointer;
+    padding: 7px;
+}
+
+.add-to-cart {
+    background-color: rgba(0, 215, 239, 0.9);
+    text-decoration: none;
+    border: 5px solid #000000;
+    font-family: 'Carveat', cursive;
+}
+
+.reset-button {
+    background-color: rgba(0, 215, 239, 0.9);
+    text-decoration: none;
+    border: 3px solid #000000;
+    position: relative;
+    margin: 10px;
+}
+
+#num-of-item {
+    display: block;
+}
+
+@keyframes for-submit-button {
+    0% {
+        background-color: rgb(76, 255, 246);
+    }
+    25% {
+        background-color: rgb(0, 197, 187);
+    }
+    50% {
+        background-color: rgb(76, 255, 246);
+    }
+    75% {
+        background-color: rgb(0, 197, 187);
+    }
+    100% {
+        background-color: rgb(76, 255, 246);
+    }
+}

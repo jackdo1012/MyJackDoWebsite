@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The shop with best item.">
+    <meta name="author" content="Jack Do">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jack Do's shop | Home page</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="updateNumInCart()">
+    <div class="header">
+        <span class="shop-title">THE JACK DO'S SHOP</span><br>
+        <a href="../html/index.html"><img src="../img/1.jpg" class="avatar">
+        <img src="../img/2.jpg" class="avatar">
+        <img src="../img/3.jpg" class="avatar">
+        <img src="../img/4.jpg" class="avatar"></a>
+        <div class="nav">
+            <a href="index.html" class="active-nav" style="order: 1;">
+                <span><i class="fa fa-home"></i> HOME</span>
+            </a>
+            <a href="shop.html" style="order: 2;">
+                <span><i class="fa fa-cart-plus"></i> SHOP</span>
+            </a>
+            <a href="about.html" style="order: 3;">
+                <span><i class="fa fa-info-circle"></i> ABOUT</span>
+            </a>
+            <a href="cart.html" style="order: 4;">
+                <span><i class="fa fa-shopping-basket"></i> CART</span>
+                <span id="num-of-item"></span>
+            </a>
+        </div>
+    </div>
+    <div class="main" id="home">
+        <p>SALE OFF UP TO 50% JUST TODAY</p>
+        <p>Be sure to buy your best outfit in this store</p>
+        <div class="product-inf">
+            <h4>Some of our best products :</h4>
+            <span class="jeans-inf">The 4th gen jeans: </span>
+            <a href="shop.html" class="jeans-inf">Click here for more information</a>
+            <ul>
+                <li>100% natural material</li>
+                <li>Worldwide shipping</li>
+                <li>Organic cotton is cultivated and harvested from non-genetically modified plants, without the use of
+                    chemical fertilizers and pesticides</li>
+            </ul>
+            <span class="shirts-inf">The 4th gen shirts: </span>
+            <a href="shop.html" class="shirts-inf">Click here for more information.</a>
+            <ul>
+                <li>100% natural material</li>
+                <li>Worldwide shipping</li>
+                <li>Organic cotton is cultivated and harvested from non-genetically modified plants, without the use of
+                    chemical fertilizers and pesticides</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <h4>Thanks for choosing us !!!</h4><br>
+        <hr><br>
+        <div class="contact">
+            <p>Contact:</p>
+            <ul>
+                <li><a href="https://facebook.com/jackdo1012" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="https://instagram.com/jack_do1012" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li>
+                    <p>Address: &infin; Bla Bla Bla Street, &infin; Ward, &infin; District, Washingyork City, America Tho
+                    </p>
+                </li>
+                <li>
+                    <p>Phone number: 1234567890</p>
+                </li>
+                <li>Email: hahayouhavebeentroll@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/update-cart.js"></script>
+    <script src="../js/avatar-changing.js"></script>
+</body>
+
+</html>

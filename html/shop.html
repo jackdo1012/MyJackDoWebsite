@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The shop with best item.">
+    <meta name="author" content="Jack Do">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Jack Do's shop | About</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body  onload="displayNumberInCart(), updateNumInCart()">
+    <div class="header">
+        <span class="shop-title">THE JACK DO'S SHOP</span><br>
+        <a href="../html/index.html"><img src="../img/1.jpg" class="avatar">
+        <img src="../img/2.jpg" class="avatar">
+        <img src="../img/3.jpg" class="avatar">
+        <img src="../img/4.jpg" class="avatar"></a>
+        <div class="nav">
+            <a id="home-nav" href="index.html" style="order: 1;">
+                <span><i class="fa fa-home"></i> HOME</span>
+            </a>
+            <a id="shop-nav" href="shop.html" class="active-nav" style="order: 2;">
+                <span><i class="fa fa-cart-plus"></i> SHOP</span>
+            </a>
+            <a id="about-nav" href="about.html" style="order: 3;">
+                <span><i class="fa fa-info-circle"></i> ABOUT</span>
+            </a>
+            <a id="cart-nav" href="cart.html" style="order: 4;">
+                <span><i class="fa fa-shopping-basket"></i> CART</span>
+                <span id="num-of-item"></span>
+            </a>
+        </div>
+    </div>
+    <div class="main" id="shop">
+        <div class="jeans-shop">
+            <h2>Jeans</h2>
+            <table class="jeans-table">
+                <thead>
+                    <th>Types</th>
+                    <th></th>
+                    <th>Price</th>
+                    <th></th>
+                    <th>Number in cart</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1th gen</td>
+                        <td>$200</td>
+                        <td>$100</td>
+                        <td><button onclick="addToCart1()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-1"></td>
+                    </tr>
+                    <tr>
+                        <td>2nd gen</td>
+                        <td>$300</td>
+                        <td>$150</td>
+                        <td><button onclick="addToCart2()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-2"></td>
+                    </tr>
+                    <tr>
+                        <td>3rd gen</td>
+                        <td>$400</td>
+                        <td>$200</td>
+                        <td><button onclick="addToCart3()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-3"></td>
+                    </tr>
+                    <tr>
+                        <td>4th gen</td>
+                        <td>$600</td>
+                        <td>$300</td>
+                        <td><button onclick="addToCart4()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-4"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="shirts-shop">
+            <h2>Shirts</h2>
+            <table class="shirts-table">
+                <thead>
+                    <th>Types</th>
+                    <th></th>
+                    <th>Price</th>
+                    <th></th>
+                    <th>Number in cart</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1th gen</td>
+                        <td>$100</td>
+                        <td>$50</td>
+                        <td><button onclick="addToCart5()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-5"></td>
+                    </tr>
+                    <tr>
+                        <td>2nd gen</td>
+                        <td>$140</td>
+                        <td>$70</td>
+                        <td><button onclick="addToCart6()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-6"></td>
+                    </tr>
+                    <tr>
+                        <td>3rd gen</td>
+                        <td>$160</td>
+                        <td>$80</td>
+                        <td><button onclick="addToCart7()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-7"></td>
+                    </tr>
+                    <tr>
+                        <td>4th gen</td>
+                        <td>$300</td>
+                        <td>$150</td>
+                        <td><button onclick="addToCart8()" class="add-to-cart">Add to cart</button></td>
+                        <td id="atc-8"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button onclick="reset()" class="reset-button">RESET</button>
+    </div>
+    <div class="footer">
+        <br>
+        <h4>Thanks for choosing us !!!</h4><br>
+        <hr><br>
+        <div class="contact">
+            <p>Contact:</p>
+            <ul>
+                <li>
+                    <a href=" https://www.facebook.com/jackdo1012" target="_blank" class="fb-link"><i
+                            class="fa fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/jack_do1012" target="_blank" class="insta-link"><i
+                            class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <p>Address: &infin; Bla Bla Bla Street, &infin; Ward, &infin; District, Washingyork City, America
+                        Tho
+                    </p>
+                </li>
+                <li>
+                    <p>Phone number: 1234567890</p>
+                </li>
+                <li>Email: hahayouhavebeentroll@gmail.com</li>
+            </ul>
+        </div>
+        <hr><br>
+    </div>
+    <script src="../js/update-cart.js"></script>
+    <script src="../js/avatar-changing.js"></script>
+</body>
+</html>
