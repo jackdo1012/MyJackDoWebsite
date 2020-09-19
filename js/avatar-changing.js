@@ -1,9 +1,9 @@
 var myIndex = -1;
 var i;
 
-changeImg3S();
+changeImg();
 
-function changeImg3S() {
+function changeImg() {
     var avatar = document.getElementsByClassName("avatar");
     for (i = 0; i < avatar.length; i++ ) {
         avatar[i].style.display = "none";
@@ -13,7 +13,7 @@ function changeImg3S() {
         myIndex = 0;
     };
     avatar[myIndex].style.display = "block";
-    setTimeout(changeImg3S, 3000);
+    setTimeout(changeImg, 3000);
 };
 
 // Function changeImg():
