@@ -15,7 +15,6 @@ function changeImg() {
     avatar[myIndex].style.display = "block";
     setTimeout(changeImg, 3000);
 };
-
 // Function changeImg():
 //     From top to bottom
 //     for {i = 0
