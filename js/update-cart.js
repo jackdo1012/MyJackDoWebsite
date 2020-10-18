@@ -20,10 +20,7 @@ function setFirstNum() {
     num8 = 0;
 }
 
-if(typeof(localStorage.setVisit)=='undefind' || localStorage.setVisit==''){
-    localStorage.setVisit='yes';
-    setFirstNum()
-}
+setFirstNum()
 
 function updateNumInCart() {
     totalNum = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8;
