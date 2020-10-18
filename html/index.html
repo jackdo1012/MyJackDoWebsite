@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload="updateNumInCart">
+<body onload="updateNumInCart()">
     <div class="header">
         <span class="shop-title">THE JACK DO'S SHOP</span><br>
         <a href="../html/index.html"><img src="../img/1.jpg" class="avatar">
@@ -82,4 +82,10 @@
     <script src="../js/avatar-changing.js"></script>
 </body>
 
+<script>
+function updateNumInCart() {
+    totalNum = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8;
+    document.getElementById("num-of-item").innerHTML = '( Total: ' + totalNum + ' )';
+}
+</script>
 </html>

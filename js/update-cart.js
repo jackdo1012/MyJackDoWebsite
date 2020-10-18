@@ -20,11 +20,8 @@ function setFirstNum() {
     num8 = 0;
 }
 
-setFirstNum()
-
-function updateNumInCart() {
-    totalNum = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8;
-    document.getElementById("num-of-item").innerHTML = '( Total: ' + totalNum + ' )';
+if (typeof totalNum != Number) {
+    setFirstNum();
 }
 
 function displayNumberInCart() {
