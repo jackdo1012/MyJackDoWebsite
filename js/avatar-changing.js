@@ -13,7 +13,7 @@ function changeImg() {
         myIndex = 0;
     };
     avatar[myIndex].style.display = "block";
-    setTimeout(changeImg, 3000);
+    setTimeout(changeImg, 2000);
 };
 // Function changeImg():
 //     From top to bottom
