@@ -20,7 +20,7 @@ function setFirstNum() {
     num8 = 0;
 }
 
-if (typeof totalNum != Number) {
+if (typeof totalNum !== Number) {
     setFirstNum();
 }
 
